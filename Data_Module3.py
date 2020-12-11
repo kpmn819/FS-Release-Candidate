@@ -61,10 +61,10 @@ aux1_page =['aux1_page.png', 870,975,350,390, mod_dict['nul'],key_dict['nul'], '
 aux2_page =['aux2_page.png', 870,975,415,450, mod_dict['nul'],key_dict['nul'], 'page',1]
 
 # Autopilot
-dec_ref_alt =['dec_ref_alt', 675,785,510,540, mod_dict['ctl'],key_dict['pg_dn'], '', 1]
-dec_ref_alt10  =['dec_ref_alt10', 505,605,510,540, mod_dict['ctl'],key_dict['pg_dn'], '', 5]
-inc_ref_alt =['inc_ref_alt', 670,780,450,490, mod_dict['ctl'],key_dict['pg_up'], '', 1]
-inc_ref_alt10  =['inc_ref_alt10', 500,610,450,480, mod_dict['ctl'],key_dict['pg_up'], '', 5]
+#dec_ref_alt =['dec_ref_alt', 675,785,510,540, mod_dict['ctl'],key_dict['pg_dn'], '', 1]
+#dec_ref_alt10  =['dec_ref_alt10', 505,605,510,540, mod_dict['ctl'],key_dict['pg_dn'], '', 5]
+#inc_ref_alt =['inc_ref_alt', 670,780,450,490, mod_dict['ctl'],key_dict['pg_up'], '', 1]
+#inc_ref_alt10  =['inc_ref_alt10', 500,610,450,480, mod_dict['ctl'],key_dict['pg_up'], '', 5]
 tog_appr_hold =['tog_approach_hold', 100,250,325,375, mod_dict['ctl'],key_dict['a'], 'off', 1, 'green']
 #tog_alt_hold =['tog_altitude_hold', 100,250,125,175, mod_dict['ctl'],key_dict['t'], 'off', 1]
 tog_apn1_hold =['ap_n1_hold', 100,250,225,275, mod_dict['ctl'],key_dict['n'], 'off', 1, 'green']
@@ -76,19 +76,19 @@ tog_ap_alt_hold =['tog_ap_altitude', 100,250,125,175, mod_dict['nul'],key_dict['
 tog_ap_flc =['tog_ap_flc', 100,250,525,575, mod_dict['ctl'],key_dict['['], 'off', 1, 'white']
 tog_ap_hdg =['tog_ap_heading', 300,450,125,175, mod_dict['alt'],key_dict['['], 'off', 1, 'blue']
 
-ap_hdg_left =['ap hdg left', 500,610,170,210, mod_dict['ctl'],key_dict['delete'], '',1]
-ap_hdg_left_fast =['ap hdg left fast', 500,610,110,150, mod_dict['ctl'],key_dict['delete'], '',8]
-ap_hdg_right =['ap hdg right', 670,785,170,210, mod_dict['ctl'],key_dict['insert'], '',1]
-ap_hdg_right_fast =['ap hdg right fast', 670,775,110,210, mod_dict['ctl'],key_dict['insert'], '',8]
+#ap_hdg_left =['ap hdg left', 500,610,170,210, mod_dict['ctl'],key_dict['delete'], '',1]
+#ap_hdg_left_fast =['ap hdg left fast', 500,610,110,150, mod_dict['ctl'],key_dict['delete'], '',8]
+#ap_hdg_right =['ap hdg right', 670,785,170,210, mod_dict['ctl'],key_dict['insert'], '',1]
+#ap_hdg_right_fast =['ap hdg right fast', 670,775,110,210, mod_dict['ctl'],key_dict['insert'], '',8]
 
 
 tog_ap_bc =['tog_ap_backcourse.png', 300,450,325,375, mod_dict['shf'],key_dict['['], 'off', 1, 'red']
 tog_ap_vs =['tog_ap_vert_speed.png', 100,250,425,475, mod_dict['altshf'],key_dict['['], 'off', 1, 'white']
 
-vs_up =['vs up', 210,375,410,450, mod_dict['ctl'],key_dict['home'], '',1]
-vs_dn =['vs dn', 380,480,460,500, mod_dict['ctl'],key_dict['end_key'], '',1]
-flc_up =['flc up', 275,380,500,550, mod_dict['ctlshf'],key_dict['insert'], '',1]
-flc_dn =['flc dn', 375,480,550,590, mod_dict['ctlshf'],key_dict['delete'], '',1]
+#vs_up =['vs up', 210,375,410,450, mod_dict['ctl'],key_dict['home'], '',1]
+#vs_dn =['vs dn', 380,480,460,500, mod_dict['ctl'],key_dict['end_key'], '',1]
+#flc_up =['flc up', 275,380,500,550, mod_dict['ctlshf'],key_dict['insert'], '',1]
+#flc_dn =['flc dn', 375,480,550,590, mod_dict['ctlshf'],key_dict['delete'], '',1]
 
 # ---------- AP Knob enries -----------------
 kn_vs_up = ['knob vs up', -1, -1, -1, -1, mod_dict['ctl'], key_dict['home'], '', 1, '1_up']
@@ -137,11 +137,12 @@ kn_trim_dn = ['knob trim down', -2, -2, -2, -2, mod_dict['nul'], key_dict['num_7
 # then add all the individual to the big_list
 # this will allow us to iterate through all the entries to find a match
 ap_list = [
-    dec_ref_alt, dec_ref_alt10, inc_ref_alt, inc_ref_alt10, tog_appr_hold, 
+    tog_appr_hold, 
     tog_apn1_hold, ap_on, tog_fd, tog_ap_alt_hold, tog_ap_flc, tog_ap_hdg,
-    ap_hdg_left, ap_hdg_left_fast, ap_hdg_right, ap_hdg_right_fast, 
-    tog_ap_bc, tog_ap_vs, navcom_page, aux1_page, aux2_page, vs_up, vs_dn,
-    flc_up, flc_dn, kn_vs_up, kn_vs_dn, kn_flc_up, kn_flc_dn, kn_hdg_l, kn_hdg_r, kn_alt_up, kn_alt_dn]
+    tog_ap_bc, tog_ap_vs, navcom_page, aux1_page, aux2_page, 
+    kn_vs_up, kn_vs_dn, kn_flc_up, kn_flc_dn, kn_hdg_l, kn_hdg_r, kn_alt_up, kn_alt_dn]
+# Removed from list: dec_ref_alt, dec_ref_alt10, inc_ref_alt, inc_ref_alt10,flc_up, flc_dn, 
+# ap_hdg_left, ap_hdg_left_fast, ap_hdg_right, ap_hdg_right_fast, vs_up, vs_dn,
 
 radio_list = [
     nav_freq_swap, inc_nav_frac, inc_nav_whole, dec_nav_frac, dec_nav_whole,
