@@ -9,6 +9,7 @@
 # managed to sequester gpio and so it still runs on pc
 # V31 replaced all encoder code with stripped 3 version
 # V32 some tweaks to make it work on the pi, added no_output for testing
+# Now working with RC-4 in Docs folder with git assistance
 
 
 
