@@ -103,17 +103,17 @@ kn_alt_dn = ['knob alt dn', -8, -8, -8, -8, mod_dict['ctl'], key_dict['pg_dn'], 
 
 nav_freq_swap =['nav_freq_swap.png', 125,280,225,280, mod_dict['ctlshf'],key_dict['n'], '',1]
 nav_rad_1_2 =['nav 1/2 swap', 150,250,335,375, mod_dict['nul'],key_dict['nul'], '',1]
-inc_nav_frac =['inc_nav_frac.png', 215,325,400,450, mod_dict['ctlshf'],key_dict['pg_up'], '',1]
-inc_nav_whole =['inc_nav_whole.png', 80,190,400,450, mod_dict['altshf'],key_dict['pg_up'], '',1]
-dec_nav_whole =['dec_nav_whole.png', 80,190,500,540, mod_dict['altshf'],key_dict['pg_dn'], '',1]
-dec_nav_frac =['dec_nav_frac.png', 225,325,500,540, mod_dict['ctlshf'],key_dict['pg_dn'], '',1]
+#inc_nav_frac =['inc_nav_frac.png', 215,325,400,450, mod_dict['ctlshf'],key_dict['pg_up'], '',1]
+#inc_nav_whole =['inc_nav_whole.png', 80,190,400,450, mod_dict['altshf'],key_dict['pg_up'], '',1]
+#dec_nav_whole =['dec_nav_whole.png', 80,190,500,540, mod_dict['altshf'],key_dict['pg_dn'], '',1]
+#dec_nav_frac =['dec_nav_frac.png', 225,325,500,540, mod_dict['ctlshf'],key_dict['pg_dn'], '',1]
 
 com_freq_swap =['com_freq_swap.png', 470,630,220,280, mod_dict['nul'],key_dict[']'], '',1]
 com_rad_1_2 =['com 1/2 swap', 490,600,330,370, mod_dict['nul'],key_dict['nul'], '',1]
-inc_com_frac =['inc_com_frac.png', 570,680,400,450, mod_dict['altctl'],key_dict[']'], '',1]
-inc_com_whole =['inc_com_whole.png', 410,520,400,450, mod_dict['ctlshf'],key_dict[']'], '',1]
-dec_com_frac =['dec_com_frac.png', 570,675,500,535, mod_dict['ctl'],key_dict[']'], '',1]
-dec_com_whole =['dec_com_whole.png', 410,520,500,535, mod_dict['shf'],key_dict[']'], '',1]
+#inc_com_frac =['inc_com_frac.png', 570,680,400,450, mod_dict['altctl'],key_dict[']'], '',1]
+#inc_com_whole =['inc_com_whole.png', 410,520,400,450, mod_dict['ctlshf'],key_dict[']'], '',1]
+#dec_com_frac =['dec_com_frac.png', 570,675,500,535, mod_dict['ctl'],key_dict[']'], '',1]
+#dec_com_whole =['dec_com_whole.png', 410,520,500,535, mod_dict['shf'],key_dict[']'], '',1]
 
 # --------------- Radio Knobs --------------------------------
 kn_nav_mhz_up = ['knob nav mhz up', -1, -1, -1, -1, mod_dict['altshf'], key_dict['pg_up'], '', 1, '1_up']
@@ -145,10 +145,11 @@ ap_list = [
 # ap_hdg_left, ap_hdg_left_fast, ap_hdg_right, ap_hdg_right_fast, vs_up, vs_dn,
 
 radio_list = [
-    nav_freq_swap, inc_nav_frac, inc_nav_whole, dec_nav_frac, dec_nav_whole,
-    com_freq_swap, inc_com_frac, inc_com_whole, dec_com_frac, dec_com_whole, ap_page, aux1_page, aux2_page,
-    kn_nav_mhz_up, kn_nav_mhz_dn, kn_nav_khz_up, kn_nav_khz_dn, kn_com_mhz_up, kn_com_mhz_dn, kn_com_khz_up, kn_com_khz_dn]
-
+    nav_freq_swap, com_freq_swap,  ap_page, aux1_page, aux2_page,
+    kn_nav_mhz_up, kn_nav_mhz_dn, kn_nav_khz_up, kn_nav_khz_dn, kn_com_mhz_up, 
+    kn_com_mhz_dn, kn_com_khz_up, kn_com_khz_dn]
+# Removed:  inc_nav_frac, inc_nav_whole, dec_nav_frac, dec_nav_whole,
+# inc_com_frac, inc_com_whole, dec_com_frac, dec_com_whole,
 aux1_list = [ap_page, navcom_page, aux2_page, flaps_up, flaps_dn, trim_up, trim_dn, park_brake, kn_trim_up, kn_trim_dn]
 
 aux2_list = [ap_page, navcom_page, aux1_page]
